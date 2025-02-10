@@ -27,13 +27,21 @@ CNN performance overall shown to be optimal when ran within a environment in whi
 
 Following environment setup ensure to install compatible versions of both keras and tensorflow with python 3.8
 
+### Don't want to use python 3.8
+
+in ```run_single.py``` line 95, change version from "3.8" to "3.10" and run as usual. Python version 3.8 is default for the code 
+
 ### Running UI detection on  Single Screenshot
 
 ```python run_single.py```
 
-A series of images will display starting with text extracted, followed by bounding box of UI elements motivated by ```cv2```, CNN will be applied to show bounding boxes of the different types of UI e.g. TextView,ImageButton etc. (see ReDraw dataset for all categories). 
+A series of images will display starting with text extracted, followed by bounding box of UI elements motivated by ```cv2```, CNN will be applied to show bounding boxes of the different types of UI e.g. TextView,ImageButton etc. (see ReDraw dataset for all categories), hold down key 0 to transition between different stages
 
 ```output file``` - contains jsons at each step with merge folder containing the final json for the component text coordinates and classification provided by the CNN. 
+
+### Final Notes 
+
+```CONFIG.py``` contains user specific path directories, ensure to adapt to your own system as needed.
 
 
 
