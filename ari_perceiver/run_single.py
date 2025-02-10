@@ -92,7 +92,7 @@ if __name__ == '__main__':
         if is_clf:
             classifier = {}
             from cnn.CompDetCNN import CompDetCNN
-            classifier['Elements'] = CompDetCNN(cnn_type="cnn-rico")
+            classifier['Elements'] = CompDetCNN(cnn_type="cnn-rico",version="3.8")
         ip.compo_detection(input_path_img, output_root, key_params,
                         classifier=classifier, resize_by_height=height, show=True)
 

@@ -5,8 +5,9 @@ import cv2
 from config.CONFIG import Config
 
 class CompDetCNN:
-    def __init__(self, cnn_type="cnn-rico"):
-        cfg = Config(cnn_type)
+    def __init__(self, cnn_type="cnn-rico",version = "3.8"):
+        self.version = version
+        cfg = Config(cnn_type,self.version)
         self.model = load_model(cfg.CNN_PATH)
         self.class_map = cfg.element_class
         self.image_shape = cfg.image_shape

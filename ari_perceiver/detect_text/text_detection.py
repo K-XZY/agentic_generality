@@ -1,4 +1,3 @@
-import detect_text.ocr as ocr
 from detect_text.Text import Text
 import numpy as np
 import cv2
