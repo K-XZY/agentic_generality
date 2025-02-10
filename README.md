@@ -37,7 +37,7 @@ in ```run_single.py``` line 95, change version from "3.8" to "3.10" and run as u
 
 A series of images will display starting with text extracted, followed by bounding box of UI elements motivated by ```cv2```, CNN will be applied to show bounding boxes of the different types of UI e.g. TextView,ImageButton etc. (see ReDraw dataset for all categories), hold down key 0 to transition between different stages
 
-```output file``` - contains jsons at each step with merge folder containing the final json for the component text coordinates and classification provided by the CNN. 
+```output file``` - contains jsons at each step with merge folder containing the final json for the component text coordinates and classification provided by the CNN. ```output/merge/screenshot.json``` is the file for parsing into the LLM for action sequence generation.
 
 ### Final Notes 
 
