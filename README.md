@@ -41,7 +41,7 @@ A series of images will display starting with text extracted, followed by boundi
 
 ### Final Notes 
 
-```CONFIG.py``` contains user specific path directories, ensure to adapt to your own system as needed.
+```CONFIG.py``` specifies model paths for versions before and after python 3.10. Not device specific, general use. 
 
 
 
